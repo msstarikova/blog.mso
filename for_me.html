@@ -1,0 +1,64 @@
+<html>
+ <head>
+     <meta charset="UTF-8">
+	 <title>Про мене</title>
+	 <link rel="stylesheet" href="for_me1.css" />
+	  <script type="text/javascript">
+	var t;
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
+
+</script>
+ </head>
+  <body id="top">
+  <br>
+<h1>Про мене</h1>
+<h2><a href="index.html" title="Вернутись на попередню сторінку"><img src="123456789.jpg" class="fig"></a></h2>
+<p>Я рада вас бачити на своєму сайті. Саме тут я хочу розказати вам трішки про себе.<br> 
+З самого дитинства я живу і навчаюсь у місті Львові. <br>Це прекрасне місто, яке варто відвідати кожній людині.
+На даний момент мені 18 і навчаюсь в університеті "Львівcька Політехніка"</p>
+<p>Саме на цьому сайті я хочу вам розказати про свої інтереси, про те як проходять мої дні.</p>
+   <div class="dropdown">
+  <button class="mainmenubtn">Факти</button>
+  <div class="dropdown-child">
+    <a href="http://www.вашдомен.ru/page1.html">Школа</a>
+    <a href="http://www.вашдомен.ru/page2.html">Університет</a>
+    <a href="http://www.вашдомен.ru/page3.html">Страхи</a>
+    <a href="http://www.вашдомен.ru/page4.html">Мрії</a>
+   </div>
+</div>
+<h3> ♥Буду рада вас усіх тут бачити♥</h3>
+<audio class="audio" controls>
+<source src="Sayk-Alone.mp3" type="audio/mp3">
+</audio>
+<br>
+<video class="video" controls>
+<source src="video_2019.mp4" type="video/mp4">
+</video>
+<script>
+function ScrollUp(){
+    var t,s;
+    s=document.body.scrollTop||window.pageYOffset;
+    t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
+}
+</script>
+<a href="#top"
+   onclick="ScrollUp();return!1;"
+   style="display:block;position:fixed;
+        /*положение кнопки*/
+        bottom:30px;right:30px;
+         /*оформление кнопки*/
+        width:64px;height:32px;padding:12px 10px 2px;font-size:16px;
+        opacity:0.7; /*добавим прозрачности*/
+        background:#ddd;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        border-radius:15px">Наверх</a>
+  </body>  
+</html>
